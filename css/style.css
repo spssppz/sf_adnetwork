@@ -1374,11 +1374,11 @@ body::after {
 
 .column-payment__decor {
   width: 4.375rem;
-  height: 6.0625rem;
+  height: 4.375rem;
   position: absolute;
   left: 50%;
   margin-left: -2.1875rem;
-  top: -3.5625rem;
+  top: -2.9375rem;
 }
 
 .column-payment__or {
