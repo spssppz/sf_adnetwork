@@ -113,6 +113,7 @@ address {
 body {
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+  padding-top: 4.8125rem;
 }
 
 body.dark-theme {
@@ -535,8 +536,18 @@ body::after {
 
 .header {
   padding: 0.75rem 0rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 3;
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.dark-theme .header {
+  background-color: #414648;
 }
 
 .header__container {
@@ -556,6 +567,18 @@ body::after {
   margin-right: auto;
 }
 
+.header__logo_d {
+  display: none;
+}
+
+.dark-theme .header__logo_d {
+  display: block;
+}
+
+.dark-theme .header__logo_l {
+  display: none;
+}
+
 .header__logo img {
   width: 100%;
   height: auto;
@@ -567,10 +590,11 @@ body::after {
   border-radius: 0.75rem;
   padding: 0.875rem 1.5625rem;
   background: #81bd52;
+  white-space: nowrap;
 }
 
 .menu:not(:last-child) {
-  margin-right: 2.5rem;
+  margin-right: 1.25rem;
 }
 
 .menu-open .menu__body {
@@ -587,7 +611,7 @@ body::after {
 }
 
 .menu__item:not(:first-child) {
-  margin-left: 1.5625rem;
+  margin-left: 0.9375rem;
 }
 
 .menu__link {
@@ -618,7 +642,7 @@ body::after {
 }
 
 .langs-header:not(:last-child) {
-  margin-right: 2.5rem;
+  margin-right: 1.25rem;
 }
 
 .langs-header__item {
@@ -664,6 +688,10 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.theme-header:not(:last-child) {
+  margin-right: 1.25rem;
 }
 
 .theme-header__item {
@@ -989,6 +1017,10 @@ body::after {
   max-width: 53.4375rem;
 }
 
+.hero__title_es {
+  max-width: 62.5rem;
+}
+
 .hero__title:not(:last-child) {
   margin-bottom: 2.5rem;
 }
@@ -1025,7 +1057,7 @@ body::after {
 
 .advantages__title {
   text-align: center;
-  max-width: 44.375rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -1418,6 +1450,18 @@ body::after {
           flex: 0 0 47.5833333333%;
 }
 
+.geo__image_d {
+  display: none;
+}
+
+.dark-theme .geo__image_d {
+  display: block;
+}
+
+.dark-theme .geo__image_l {
+  display: none;
+}
+
 .geo__image img {
   width: 100%;
   height: auto;
@@ -1706,6 +1750,18 @@ body::after {
 
 .right-contact__qr {
   width: 15.75rem;
+}
+
+.right-contact__qr_d {
+  display: none;
+}
+
+.dark-theme .right-contact__qr_d {
+  display: block;
+}
+
+.dark-theme .right-contact__qr_l {
+  display: none;
 }
 
 .right-contact__qr img {
@@ -2078,10 +2134,6 @@ body::after {
     display: none;
   }
 
-  .theme-header:not(:last-child) {
-    margin-right: 2.5rem;
-  }
-
   .top-footer__logo {
     position: relative;
     top: -0.625rem;
@@ -2097,6 +2149,10 @@ body::after {
 }
 
 @media (max-width: 77.49875em) {
+  body {
+    padding-top: 4.5rem;
+  }
+
   .header__logo {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 13.25rem;
@@ -2106,18 +2162,6 @@ body::after {
 
   .header__login {
     display: none;
-  }
-
-  .menu:not(:last-child) {
-    margin-right: 1.25rem;
-  }
-
-  .menu__item:not(:first-child) {
-    margin-left: 1.25rem;
-  }
-
-  .langs-header:not(:last-child) {
-    margin-right: 1.25rem;
   }
 
   .top-footer__body {
@@ -2185,6 +2229,10 @@ body::after {
 }
 
 @media (max-width: 61.99875em) {
+  body {
+    padding-top: 4.0625rem;
+  }
+
   .popup__content {
     padding: 3.75rem 0.9375rem;
   }
@@ -2266,10 +2314,6 @@ body::after {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-  }
-
-  .theme-header:not(:last-child) {
-    margin-right: 1.25rem;
   }
 
   .contacts-menu:not(:last-child) {
@@ -2412,6 +2456,10 @@ body::after {
 
   .hero {
     min-height: 35rem;
+  }
+
+  .hero__descr {
+    font-size: 1.375rem;
   }
 
   .hero__title {
@@ -2774,6 +2822,10 @@ body::after {
     font-size: 1rem;
   }
 
+  .hero__descr {
+    font-size: 1.25rem;
+  }
+
   .hero__title {
     font-size: 1.875rem;
   }
@@ -2969,6 +3021,10 @@ body::after {
     font-weight: 500;
     color: #fff;
     margin: 0rem 0.625rem;
+  }
+
+  .hero__descr {
+    font-size: 1.125rem;
   }
 
   .hero__title {
