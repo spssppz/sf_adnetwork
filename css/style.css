@@ -1293,9 +1293,8 @@ body::after {
 .payment__columns {
   display: -ms-grid;
   display: grid;
-  gap: 3.75rem;
-  -ms-grid-columns: 1fr 22.0833333333% 1fr;
-  grid-template-columns: 1fr 22.0833333333% 1fr;
+  -ms-grid-columns: 1fr 32.0833333333% 1fr;
+  grid-template-columns: 1fr 32.0833333333% 1fr;
 }
 
 .column-payment {
@@ -1315,13 +1314,13 @@ body::after {
   font-weight: 500;
   border-radius: 1.875rem;
   padding: 1.25rem;
-  border: 0.0625rem solid #81bd52;
-  font-size: 0.875rem;
+  border: 0.125rem solid #81bd52;
+  font-size: 1.375rem;
   line-height: 1.6;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
   position: relative;
-  min-height: 9.6875rem;
+  min-height: 16.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1339,15 +1338,19 @@ body::after {
   color: #fff;
 }
 
+.column-payment__descr_centered {
+  min-height: 9.6875rem;
+}
+
 .column-payment__descr::before,
 .column-payment__descr::after {
   content: "";
   position: absolute;
   top: 50%;
-  height: 1.5625rem;
+  height: 2rem;
   width: 0.625rem;
   background-color: #fff;
-  margin-top: -0.78125rem;
+  margin-top: -1rem;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
 }
@@ -1396,10 +1399,10 @@ body::after {
 
 .column-payment__arrow {
   position: absolute;
-  background: url("../img/payment/arrow.svg") 50%/100% no-repeat;
-  width: 4.8125rem;
-  height: 2.625rem;
-  top: 0;
+  background: url("../img/payment/arrow-left.svg") 50%/100% no-repeat;
+  width: 5rem;
+  height: 1.5rem;
+  top: 1.25rem;
 }
 
 .column-payment__arrow_1 {
@@ -1408,15 +1411,14 @@ body::after {
 
 .column-payment__arrow_2 {
   left: calc(100% + 0.6875rem);
-  -webkit-transform: rotate(110deg);
-      -ms-transform: rotate(110deg);
-          transform: rotate(110deg);
+  background-image: url("../img/payment/arrow-right.svg");
 }
 
 .column-payment__arrow_3 {
   left: 50%;
   top: calc(100% + 0.5rem);
-  width: 0.4375rem;
+  width: 0.75rem;
+  margin-left: -0.375rem;
   height: 3.4375rem;
   background-image: url("../img/payment/arrow-down.svg");
 }
@@ -2178,11 +2180,13 @@ body::after {
 
   .column-payment__descr {
     padding: 0.625rem;
+    font-size: 1.25rem;
   }
 
   .column-payment__arrow {
-    width: 3.875rem;
-    height: 2.125rem;
+    width: 3.5rem;
+    height: 1rem;
+    top: 2.1875rem;
   }
 
   .column-payment__arrow_1 {
@@ -2554,6 +2558,8 @@ body::after {
     margin-bottom: 0.875rem;
     padding: 2.625rem 1.75rem 1.5rem;
     max-width: 43.75rem;
+    font-size: 1.125rem;
+    min-height: auto;
   }
 
   .column-payment__coin {
@@ -2882,6 +2888,10 @@ body::after {
     font-size: 1.25rem;
   }
 
+  .column-payment__descr {
+    font-size: 1rem;
+  }
+
   .content-geo__label {
     font-size: 1rem;
   }
@@ -3063,6 +3073,10 @@ body::after {
 
   .payment__subtitle {
     font-size: 1rem;
+  }
+
+  .column-payment__descr {
+    font-size: 0.875rem;
   }
 
   .content-geo__label {
