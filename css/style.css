@@ -170,8 +170,14 @@ body.dark-theme {
   font-weight: 500;
   color: #fff;
   padding: 1.375rem 1.875rem;
-  background: #81bd52;
+  background-color: #81bd52;
   border-radius: 1.1875rem;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.btn:active {
+  background-color: #79b44a;
 }
 
 input[type=text],
@@ -541,21 +547,33 @@ body::after {
   left: 0;
   right: 0;
   z-index: 3;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  bottom: 0;
   background-color: #fff;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+  z-index: -1;
 }
 
-.dark-theme .header {
+.dark-theme .header::after {
   background-color: #414648;
 }
 
-.header.scroll-header {
-  background-color: rgba(255, 255, 255, 0.9);
+.header.scroll-header::after {
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-.dark-theme .header.scroll-header {
-  background-color: rgba(65, 70, 72, 0.9);
+.dark-theme .header.scroll-header::after {
+  background-color: rgba(65, 70, 72, 0.75);
 }
 
 .header__container {
@@ -597,8 +615,14 @@ body::after {
   color: #fff;
   border-radius: 0.75rem;
   padding: 0.875rem 1.5625rem;
-  background: #81bd52;
+  background-color: #81bd52;
   white-space: nowrap;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.header__login:active {
+  background-color: #79b44a;
 }
 
 .menu:not(:last-child) {
@@ -3178,8 +3202,16 @@ body::after {
 }
 
 @media (any-hover: hover) {
+  .btn:hover {
+    background-color: #8dcd5a;
+  }
+
   .checkbox__label a:hover {
     color: #a0a3a3;
+  }
+
+  .header__login:hover {
+    background-color: #8dcd5a;
   }
 
   .menu__link:hover {
