@@ -176,6 +176,10 @@ body.dark-theme {
   transition: background-color 0.3s ease 0s;
 }
 
+.btn:hover {
+  background-color: #518826;
+}
+
 .btn:active {
   background-color: #b2e18d;
 }
@@ -681,6 +685,10 @@ body::after {
   white-space: nowrap;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+}
+
+.header__login:hover {
+  background-color: #518826;
 }
 
 .header__login:active {
@@ -2017,7 +2025,7 @@ body::after {
   gap: 1.25rem;
 }
 
-.help-column {
+.help-column a {
   border: 0.0625rem solid rgba(129, 189, 82, 0.5);
   border-radius: 1.5625rem;
   -webkit-box-shadow: 0 1.25rem 1.875rem 0 rgba(222, 222, 222, 0.19);
@@ -2043,7 +2051,7 @@ body::after {
   transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 
-.dark-theme .help-column {
+.dark-theme .help-column a {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -2154,8 +2162,10 @@ body::after {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.34;
+  cursor: pointer;
   width: 100%;
   text-align: left;
+  display: block;
   position: relative;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -3312,7 +3322,7 @@ body::after {
     grid-template-columns: 1fr;
   }
 
-  .help-column {
+  .help-column a {
     min-height: 10.8125rem;
     padding: 0.9375rem 0rem;
   }
@@ -3757,20 +3767,12 @@ body::after {
 }
 
 @media (any-hover: hover) {
-  .btn:hover {
-    background-color: #518826;
-  }
-
   .checkbox__label a:hover {
     color: #a0a3a3;
   }
 
   .breadcrumbs__link:hover {
     color: #81bd52;
-  }
-
-  .header__login:hover {
-    background-color: #518826;
   }
 
   .menu__link:hover {
