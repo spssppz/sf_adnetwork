@@ -2045,10 +2045,8 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 13.9375rem;
-  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
-  transition: -webkit-box-shadow 0.3s ease 0s;
-  transition: box-shadow 0.3s ease 0s;
-  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
 }
 
 .dark-theme .help-column a {
@@ -2167,8 +2165,8 @@ body::after {
   text-align: left;
   display: block;
   position: relative;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
   padding: 0.6875rem 1.5625rem 0.6875rem 3.125rem;
 }
 
@@ -2203,6 +2201,10 @@ body::after {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.dark-theme .left-help-spollers__title::before {
+  background-image: url("../img/icons/spoller-arrow-w.svg");
 }
 
 .left-help-spollers__title._spoller-active {
@@ -2270,8 +2272,8 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: color 0.3s ease 0s;
-  transition: color 0.3s ease 0s;
+  -webkit-transition: 0.3s ease 0s;
+  transition: 0.3s ease 0s;
   padding: 1.125rem 1.5625rem 1.125rem 0.9375rem;
 }
 
@@ -3827,8 +3829,20 @@ body::after {
     fill-opacity: 1;
   }
 
+  .help-column a:hover {
+    border-color: #81bd52;
+  }
+
+  .left-help-spollers__title:hover {
+    background: rgba(129, 189, 82, 0.15);
+  }
+
   .left-help-spollers__body ul li a:hover {
     color: #81bd52;
+  }
+
+  .right-help-spollers__title:hover {
+    background: rgba(129, 189, 82, 0.3);
   }
 
   .column-contact__mail:hover {
