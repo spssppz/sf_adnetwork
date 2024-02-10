@@ -2226,7 +2226,7 @@ body::after {
   border-top: 0.0625rem solid rgba(129, 189, 82, 0.15);
 }
 
-.left-help-spollers__body ul li a {
+.left-help-spollers__body ul li button {
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.34;
@@ -2235,7 +2235,7 @@ body::after {
   transition: color 0.3s ease 0s;
 }
 
-.dark-theme .left-help-spollers__body ul li a {
+.dark-theme .left-help-spollers__body ul li button {
   color: #fff;
 }
 
@@ -3834,10 +3834,10 @@ body::after {
   }
 
   .left-help-spollers__title:hover {
-    background: rgba(129, 189, 82, 0.15);
+    background: rgba(129, 189, 82, 0.3);
   }
 
-  .left-help-spollers__body ul li a:hover {
+  .left-help-spollers__body ul li button:hover {
     color: #81bd52;
   }
 
