@@ -371,6 +371,8 @@ body::after {
   transition: opacity 0.8s ease 0s;
   pointer-events: none;
   z-index: 149;
+  -webkit-backdrop-filter: blur(0.3125rem);
+          backdrop-filter: blur(0.3125rem);
 }
 
 .popup-show body::after {
@@ -465,7 +467,7 @@ body::after {
 }
 
 .popup__image {
-  max-width: 19.625rem;
+  max-width: 13rem;
 }
 
 .popup__image img {
@@ -2858,6 +2860,15 @@ body::after {
   .menu__item:not(:first-child) {
     margin-left: 0;
     margin-top: 1.25rem;
+  }
+
+  .menu__item_login a {
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.5625rem;
+    background-color: #81bd52;
+    display: inline-block;
   }
 
   .menu__link {
