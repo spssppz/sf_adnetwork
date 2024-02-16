@@ -718,6 +718,10 @@ body::after {
   margin-left: 0.9375rem;
 }
 
+.dark-theme .menu__item_login a:hover {
+  color: #fff;
+}
+
 .menu__link {
   font-weight: 500;
   -webkit-transition: color 0.3s ease 0s;
@@ -2885,7 +2889,7 @@ body::after {
   }
 
   .menu__item_login a::after {
-    content: none;
+    display: none;
   }
 
   .menu__item_login a:hover {
