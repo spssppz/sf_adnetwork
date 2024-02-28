@@ -2124,6 +2124,9 @@ body::after {
   -ms-grid-columns: 17.8125rem 1fr;
   grid-template-columns: 17.8125rem 1fr;
   gap: 1.25rem;
+}
+
+.left-help {
   position: relative;
 }
 
@@ -2693,9 +2696,9 @@ body::after {
     min-height: 37.5rem;
   }
 
-  .left-help-spollers {
+  .left-help__body {
     position: sticky;
-    top: 5rem;
+    top: 6.25rem;
   }
 
   .left-hero-contact {
