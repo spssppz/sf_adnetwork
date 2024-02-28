@@ -2132,12 +2132,22 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #81bd52;
+  background-color: #81bd52;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 3.875rem;
   padding: 0.3125rem 0.9375rem;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.left-help__title:hover {
+  background-color: #518826;
+}
+
+.left-help__title:active {
+  background-color: #b2e18d;
 }
 
 .left-help__title:not(:last-child) {
@@ -2677,6 +2687,10 @@ body::after {
 
   .right-contact {
     margin-top: 3.125rem;
+  }
+
+  .helps {
+    min-height: 37.5rem;
   }
 
   .left-help-spollers {
