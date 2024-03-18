@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>help</title>
+  <title>Sing in</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css?_v=20240318081951">
@@ -29,7 +29,7 @@
           <nav class="menu__body">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="">Publishers</a>
+                <a class="menu__link menu__link_current" href="">Publishers</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Advertisers</a>
@@ -38,7 +38,7 @@
                 <a class="menu__link" href="https://blog.scroogefrog.com/">Blog</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link menu__link_current" href="">Help</a>
+                <a class="menu__link" href="">Help</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">About us</a>
@@ -113,102 +113,44 @@
       </div>
     </header>
     <main class="page">
-      <nav class="breadcrumbs">
-        <div class="breadcrumbs__container">
-          <ul class="breadcrumbs__list">
-            <li>
-              <a class="breadcrumbs__link" href="">Help</a>
-            </li>
-            <li>
-              <a class="breadcrumbs__link" href="">Publishers</a>
-            </li>
-            <li>
-              <a class="breadcrumbs__link" href="">General</a>
-            </li>
-            <li>
-              <span class="breadcrumbs__item">General information</span>
-            </li>
-          </ul>
-          <a class="breadcrumbs__back" href="">Back home</a>
-        </div>
-      </nav>
-      <section class="helps">
-        <div class="helps__container">
-          <div class="helps__body">
-            <div class="helps__left left-help">
-              <div class="left-help__body">
-                <a class="left-help__title" href="">
-                  <span class="left-help__icon">
-                    <picture>
-                      <source srcset="img/help-list/01-w.webp" type="image/webp">
-                      <img src="img/help-list/01-w.png" width="23" height="23" alt="">
-                    </picture>
-                  </span>
-                  <span class="left-help__descr">Publishers</span>
-                </a>
-                <ul class="left-help-spollers" data-spollers>
-                  <li class="left-help-spollers__item">
-                    <a class="left-help-spollers__title" data-spoller>General</a>
-                    <div class="left-help-spollers__body">
-                      <ul>
-                        <li>
-                          <button data-target-spoller="#spoller_1">General information</button>
-                        </li>
-                        <li>
-                          <button data-target-spoller="#spoller_2">Requirements for Publishers</button>
-                        </li>
-                        <li>
-                          <button data-target-spoller="#spoller_3">How to create a widget?</button>
-                        </li>
-                        <li>
-                          <button data-target-spoller="#spoller_4">Widgets’ optimization</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="left-help-spollers__item">
-                    <a class="left-help-spollers__title" data-spoller href="/help-item-prohibited.html">Prohibited
-                      content
-                      and practices</a>
-                    <div class="left-help-spollers__body">
-                      <ul>
-                        <li>
-                          <button>Prohibited Placements</button>
-                        </li>
-                        <li>
-                          <button>Prohibited Practices</button>
-                        </li>
-                        <li>
-                          <button>Prohibited Categories</button>
-                        </li>
-                        <li>
-                          <button>Prohibited Language</button>
-                        </li>
-                        <li>
-                          <button>Prohibited Imagery</button>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+      <section class="forgot">
+        <div class="forgot__content">
+          <div class="forgot__container">
+            <div class="forgot__body">
+              <div class="left-sing">
+                <h1 class="left-sing__title">Forgot Your Password?</h1>
+                <div class="left-sing__subtitle left-sing__subtitle_forgot">To reset your password, please provide the
+                  email
+                  address
+                  linked to your ScroogeFrog AdNetwork account</div>
+                <div class="left-sing__descr">*All fields are required unless marked as «Optional».</div>
+                <div class="left-sing__tabs tabs-sing">
+                  <div class="tabs-sing__content">
+                    <form class="form-sing" action="#">
+                      <div class="form-sing__lines">
+                        <div class="form-sing__line form-sing__line_email">
+                          <input class="form-sing__input input" autocomplete="no" type="text" name="sing-email" placeholder="Email*">
+                        </div>
+                      </div>
+                      <button class="form-sing__btn btn">Send</button>
+                      <div class="form-sing__bottom">
+                        <a class="form-sing__login" href="">Back to Sing in</a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="helps__right right-help">
-              <h2 class="right-help__title">General</h2>
-              <p class="right-help__descr">General revenue, interact with clients, and monetize your traffic more
-                effectively</p>
-              <ul class="right-help__list">
-                <li class="right-help__item">
-                  <a class="right-help__link" href="">General</a>
-                </li>
-                <li class="right-help__item">
-                  <a class="right-help__link" href="">Prohibited content and practices</a>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
+        <div class="forgot__image">
+          <picture>
+            <source srcset="img/sing-up/forgot-bg.webp" type="image/webp">
+            <img src="img/sing-up/forgot-bg.jpg" alt="">
+          </picture>
+        </div>
       </section>
+
     </main>
     <footer class="footer">
       <div class="footer__top top-footer">
@@ -349,8 +291,6 @@
       </div>
     </div>
   </div>
-
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4&lang=ru_RU&_v=20240318081951"></script> -->
   <script src="js/app.min.js?_v=20240318081951"></script>
 
 </body>
