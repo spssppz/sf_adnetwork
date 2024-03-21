@@ -218,6 +218,39 @@ input[type=date] {
   color: #fff;
 }
 
+.input.error-email,
+.input.error-phone,
+.input.error-pass,
+.input.error-pass-conf,
+.input.error-text {
+  border-color: #bd5252 !important;
+  color: #bd5252;
+}
+
+.input.error-email::-webkit-input-placeholder, .input.error-phone::-webkit-input-placeholder, .input.error-pass::-webkit-input-placeholder, .input.error-pass-conf::-webkit-input-placeholder, .input.error-text::-webkit-input-placeholder {
+  color: #bd5252 !important;
+}
+
+.input.error-email::-moz-placeholder, .input.error-phone::-moz-placeholder, .input.error-pass::-moz-placeholder, .input.error-pass-conf::-moz-placeholder, .input.error-text::-moz-placeholder {
+  color: #bd5252 !important;
+}
+
+.input.error-email:-ms-input-placeholder, .input.error-phone:-ms-input-placeholder, .input.error-pass:-ms-input-placeholder, .input.error-pass-conf:-ms-input-placeholder, .input.error-text:-ms-input-placeholder {
+  color: #bd5252 !important;
+}
+
+.input.error-email::-ms-input-placeholder, .input.error-phone::-ms-input-placeholder, .input.error-pass::-ms-input-placeholder, .input.error-pass-conf::-ms-input-placeholder, .input.error-text::-ms-input-placeholder {
+  color: #bd5252 !important;
+}
+
+.input.error-email::placeholder,
+.input.error-phone::placeholder,
+.input.error-pass::placeholder,
+.input.error-pass-conf::placeholder,
+.input.error-text::placeholder {
+  color: #bd5252 !important;
+}
+
 .input::-webkit-input-placeholder {
   color: #a0a3a3;
   -webkit-transition: color 0.3s ease 0s;
@@ -273,9 +306,63 @@ input[type=date] {
   color: #fff;
 }
 
-textarea.input {
-  resize: none;
-  padding: 0rem 0rem;
+.input::-webkit-passman-key {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 2.5rem;
+}
+
+.error-message,
+.pass-msg {
+  font-size: 0.75rem;
+  color: #bd5252;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1.25rem;
+}
+
+.error-message:not(:last-child),
+.pass-msg:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.error-message::before,
+.pass-msg::before {
+  content: "!";
+  font-size: 0.75rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1rem;
+          flex: 0 0 1rem;
+  width: 1rem;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 1rem;
+  background: #bd5252;
+  border-radius: 50%;
+  margin-right: 0.6875rem;
+}
+
+.pass-msg {
+  color: #414648;
+}
+
+.pass-msg::before {
+  background: #414648;
 }
 
 .checkbox {
@@ -761,6 +848,12 @@ body::after {
   left: 0;
   right: 0;
   z-index: 4;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.dark-theme .header {
+  background-color: #000;
 }
 
 .header__container {
@@ -792,7 +885,7 @@ body::after {
 }
 
 .dark-theme .header__container::after {
-  background-color: #414648;
+  background-color: #000;
 }
 
 .scroll-header .header__container::after {
@@ -1112,7 +1205,13 @@ body::after {
 }
 
 .footer {
-  background: #414648;
+  background-color: #414648;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.dark-theme .footer {
+  background-color: #000;
 }
 
 .top-footer__body {
@@ -2836,6 +2935,10 @@ body::after {
   background: transparent;
 }
 
+.form-sing {
+  text-align: left;
+}
+
 .form-sing__lines:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -2961,6 +3064,7 @@ body::after {
   font-size: 1rem;
   color: #81bd52;
   position: relative;
+  text-align: center;
   -webkit-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
 }
@@ -2979,6 +3083,10 @@ body::after {
   margin-bottom: 1.25rem;
 }
 
+.form-sing__checkbox {
+  text-align: center;
+}
+
 .form-sing__checkbox:not(:last-child) {
   margin-bottom: 0.75rem;
 }
@@ -2992,6 +3100,10 @@ body::after {
 
 .form-sing__btn:not(:last-child) {
   margin-bottom: 1.125rem;
+}
+
+.form-sing__bottom {
+  text-align: center;
 }
 
 .form-sing__descr {
