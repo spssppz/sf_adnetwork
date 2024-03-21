@@ -251,6 +251,14 @@ input[type=date] {
   color: #bd5252 !important;
 }
 
+.input.error-email + .form-sing__icon svg path,
+.input.error-phone + .form-sing__icon svg path,
+.input.error-pass + .form-sing__icon svg path,
+.input.error-pass-conf + .form-sing__icon svg path,
+.input.error-text + .form-sing__icon svg path {
+  fill: #bd5252;
+}
+
 .input::-webkit-input-placeholder {
   color: #a0a3a3;
   -webkit-transition: color 0.3s ease 0s;
@@ -842,6 +850,10 @@ body::after {
   color: #fff;
 }
 
+.form-msg {
+  display: none;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -854,6 +866,10 @@ body::after {
 
 .dark-theme .header {
   background-color: #000;
+}
+
+.dark-theme .header.scroll-header {
+  background-color: transparent;
 }
 
 .header__container {
@@ -2947,46 +2963,40 @@ body::after {
   position: relative;
 }
 
-.form-sing__line::after {
-  content: "";
+.form-sing__line:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.form-sing__line_email .form-sing__icon {
+  height: 0.9375rem;
+}
+
+.form-sing__line_pass .form-sing__icon {
+  width: 1.0625rem;
+}
+
+.form-sing__line_phone .form-sing__icon {
+  width: 1.25rem;
+}
+
+.form-sing__line_name .form-sing__icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.form-sing__line_timezone .form-sing__icon {
+  width: 1.25rem;
+}
+
+.form-sing__icon {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
   left: 1.25rem;
-  background: url("../img/icons/sing-up/mail.svg") 50%/100% no-repeat;
   width: 1rem;
   height: 1.25rem;
-}
-
-.form-sing__line:not(:last-child) {
-  margin-bottom: 0.625rem;
-}
-
-.form-sing__line_email::after {
-  height: 0.9375rem;
-}
-
-.form-sing__line_pass::after {
-  background-image: url("../img/icons/sing-up/pass.svg");
-  width: 1.0625rem;
-}
-
-.form-sing__line_phone::after {
-  background-image: url("../img/icons/sing-up/phone.svg");
-  width: 1.25rem;
-}
-
-.form-sing__line_name::after {
-  background-image: url("../img/icons/sing-up/name.svg");
-  width: 1.125rem;
-  height: 1.125rem;
-}
-
-.form-sing__line_timezone::after {
-  background-image: url("../img/icons/sing-up/timezone.svg");
-  width: 1.25rem;
 }
 
 .form-sing__input {
@@ -3174,6 +3184,10 @@ body::after {
       -ms-flex-align: center;
           align-items: center;
   max-width: 21.875rem;
+}
+
+.right-sing__body_es {
+  max-width: 28.125rem;
 }
 
 .right-sing__icon {

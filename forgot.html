@@ -5,7 +5,7 @@
   <title>Sing in</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css?_v=20240321093458">
+  <link rel="stylesheet" href="css/style.min.css?_v=20240321134516">
   <link rel="shortcut icon" href="img/favicon.png">
   <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -126,10 +126,30 @@
                 <div class="left-sing__descr">*All fields are required unless marked as «Optional».</div>
                 <div class="left-sing__tabs tabs-sing">
                   <div class="tabs-sing__content">
-                    <form class="form-sing" action="#">
+                    <form class="form-sing form-validate" action="#">
+                      <div class="form-msg" aria-hidden="true">
+                        <span class="form-msg__empty">This field is mandatory</span>
+                        <span class="form-msg__pass">Create a strong password with a mix of letters,
+                          <br> numbers, and
+                          symbols
+                        </span>
+                        <span class="form-msg__pass-length">Use 6 characters or more for your password</span>
+                        <span class="form-msg__pass-other">Please choose a stronger password.
+                          <br> Try a mix of letters,
+                          numbers, and symbols 
+                        </span>
+                        <span class="form-msg__pass-conf">Those passwords didn’t match. Try again</span>
+                        <span class="form-msg__email">Please enter a valid email address</span>
+                        <span class="form-msg__phone">Please enter a valid phone number</span>
+                      </div>
                       <div class="form-sing__lines">
                         <div class="form-sing__line form-sing__line_email">
-                          <input class="form-sing__input input" autocomplete="no" type="text" name="sing-email" placeholder="Email*">
+                          <input class="form-sing__input input req-email" autocomplete="no" type="text" name="sing-email" placeholder="Email*">
+                          <span class="form-sing__icon">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.9362 0.510635H3.40426C2.50172 0.511716 1.63646 0.870725 0.998277 1.50891C0.36009 2.1471 0.00108109 3.01236 0 3.91489L0 12.0851C0.00108109 12.9876 0.36009 13.8529 0.998277 14.4911C1.63646 15.1293 2.50172 15.4883 3.40426 15.4894H12.9362C13.8387 15.4883 14.704 15.1293 15.3421 14.4911C15.9803 13.8529 16.3393 12.9876 16.3404 12.0851V3.91489C16.3393 3.01236 15.9803 2.1471 15.3421 1.50891C14.704 0.870725 13.8387 0.511716 12.9362 0.510635ZM3.40426 1.87234H12.9362C13.3439 1.87314 13.742 1.99592 14.0793 2.22488C14.4166 2.45385 14.6777 2.77851 14.8289 3.1571L9.61498 8.37174C9.23127 8.75391 8.71177 8.96849 8.17021 8.96849C7.62865 8.96849 7.10915 8.75391 6.72545 8.37174L1.51149 3.1571C1.66274 2.77851 1.92382 2.45385 2.26114 2.22488C2.59846 1.99592 2.99657 1.87314 3.40426 1.87234ZM12.9362 14.1277H3.40426C2.86254 14.1277 2.34301 13.9125 1.95995 13.5294C1.5769 13.1464 1.3617 12.6268 1.3617 12.0851V4.93617L5.76272 9.33447C6.40179 9.97192 7.26758 10.3299 8.17021 10.3299C9.07285 10.3299 9.93864 9.97192 10.5777 9.33447L14.9787 4.93617V12.0851C14.9787 12.6268 14.7635 13.1464 14.3805 13.5294C13.9974 13.9125 13.4779 14.1277 12.9362 14.1277Z" fill="#A0A3A3" />
+                            </svg>
+                          </span>
                         </div>
                       </div>
                       <button class="form-sing__btn btn">Send</button>
@@ -271,7 +291,7 @@
         </div>
       </div>
       <div class="footer__bottom bottom-footer">
-        <small class="bottom-footer__copy">© 2007 — 2024 All rights reserved.</small>
+        <small class="bottom-footer__copy">© 2008 — 2024 All rights reserved.</small>
       </div>
     </footer>
   </div>
@@ -291,7 +311,7 @@
       </div>
     </div>
   </div>
-  <script src="js/app.min.js?_v=20240321093458"></script>
+  <script src="js/app.min.js?_v=20240321134516"></script>
 
 </body>
 
