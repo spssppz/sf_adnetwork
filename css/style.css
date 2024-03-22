@@ -226,24 +226,25 @@ input[type=date] {
 .input.error-phone,
 .input.error-pass,
 .input.error-pass-conf,
+.input.error-url,
 .input.error-text {
   border-color: #bd5252 !important;
   color: #bd5252;
 }
 
-.input.error-email::-webkit-input-placeholder, .input.error-phone::-webkit-input-placeholder, .input.error-pass::-webkit-input-placeholder, .input.error-pass-conf::-webkit-input-placeholder, .input.error-text::-webkit-input-placeholder {
+.input.error-email::-webkit-input-placeholder, .input.error-phone::-webkit-input-placeholder, .input.error-pass::-webkit-input-placeholder, .input.error-pass-conf::-webkit-input-placeholder, .input.error-url::-webkit-input-placeholder, .input.error-text::-webkit-input-placeholder {
   color: #bd5252 !important;
 }
 
-.input.error-email::-moz-placeholder, .input.error-phone::-moz-placeholder, .input.error-pass::-moz-placeholder, .input.error-pass-conf::-moz-placeholder, .input.error-text::-moz-placeholder {
+.input.error-email::-moz-placeholder, .input.error-phone::-moz-placeholder, .input.error-pass::-moz-placeholder, .input.error-pass-conf::-moz-placeholder, .input.error-url::-moz-placeholder, .input.error-text::-moz-placeholder {
   color: #bd5252 !important;
 }
 
-.input.error-email:-ms-input-placeholder, .input.error-phone:-ms-input-placeholder, .input.error-pass:-ms-input-placeholder, .input.error-pass-conf:-ms-input-placeholder, .input.error-text:-ms-input-placeholder {
+.input.error-email:-ms-input-placeholder, .input.error-phone:-ms-input-placeholder, .input.error-pass:-ms-input-placeholder, .input.error-pass-conf:-ms-input-placeholder, .input.error-url:-ms-input-placeholder, .input.error-text:-ms-input-placeholder {
   color: #bd5252 !important;
 }
 
-.input.error-email::-ms-input-placeholder, .input.error-phone::-ms-input-placeholder, .input.error-pass::-ms-input-placeholder, .input.error-pass-conf::-ms-input-placeholder, .input.error-text::-ms-input-placeholder {
+.input.error-email::-ms-input-placeholder, .input.error-phone::-ms-input-placeholder, .input.error-pass::-ms-input-placeholder, .input.error-pass-conf::-ms-input-placeholder, .input.error-url::-ms-input-placeholder, .input.error-text::-ms-input-placeholder {
   color: #bd5252 !important;
 }
 
@@ -251,6 +252,7 @@ input[type=date] {
 .input.error-phone::placeholder,
 .input.error-pass::placeholder,
 .input.error-pass-conf::placeholder,
+.input.error-url::placeholder,
 .input.error-text::placeholder {
   color: #bd5252 !important;
 }
@@ -259,8 +261,19 @@ input[type=date] {
 .input.error-phone + .form-sing__icon svg path,
 .input.error-pass + .form-sing__icon svg path,
 .input.error-pass-conf + .form-sing__icon svg path,
+.input.error-url + .form-sing__icon svg path,
 .input.error-text + .form-sing__icon svg path {
   fill: #bd5252;
+}
+
+.input.error-email + .form-sing__icon svg path.svg-name,
+.input.error-phone + .form-sing__icon svg path.svg-name,
+.input.error-pass + .form-sing__icon svg path.svg-name,
+.input.error-pass-conf + .form-sing__icon svg path.svg-name,
+.input.error-url + .form-sing__icon svg path.svg-name,
+.input.error-text + .form-sing__icon svg path.svg-name {
+  fill: none;
+  stroke: #bd5252;
 }
 
 .input::-webkit-input-placeholder {
@@ -373,6 +386,10 @@ input[type=date] {
   color: #414648;
 }
 
+.dark-theme .pass-msg {
+  color: #fff;
+}
+
 .pass-msg::before {
   background: #414648;
 }
@@ -483,6 +500,10 @@ input[type=date] {
   background: rgba(255, 255, 255, 0.05);
 }
 
+.error-sel .select__title {
+  color: #bd5252;
+}
+
 .select__value {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,6 +516,10 @@ input[type=date] {
   font-size: 1rem;
   color: #a0a3a3;
   gap: 0.625rem;
+}
+
+.error-sel .select__value {
+  color: #bd5252;
 }
 
 .select__value > * {
@@ -2991,6 +3016,14 @@ body::after {
   height: 1.125rem;
 }
 
+.form-sing__line__site .form-sing__icon {
+  width: 1.25rem;
+}
+
+.form-sing__line__company .form-sing__icon {
+  width: 1.25rem;
+}
+
 .form-sing__line_timezone .form-sing__icon {
   width: 1.25rem;
 }
@@ -3006,6 +3039,10 @@ body::after {
   height: 1.25rem;
 }
 
+.error-sel .form-sing__icon svg path {
+  fill: #bd5252;
+}
+
 .form-sing__input {
   border-radius: 0.5625rem !important;
   padding: 0rem 1.25rem 0 2.875rem;
@@ -3014,10 +3051,18 @@ body::after {
   font-size: 1rem;
 }
 
+.form-sing__input:focus {
+  outline-color: #000;
+}
+
 .dark-theme .form-sing__input {
   color: #a0a3a3;
   background: rgba(255, 255, 255, 0.05);
   border: 0.0625rem solid rgba(160, 163, 163, 0.2);
+}
+
+.dark-theme .form-sing__input:focus {
+  outline-color: #fff;
 }
 
 .form-sing__input::-webkit-input-placeholder {
@@ -3074,6 +3119,11 @@ body::after {
 .form-sing__eye svg {
   width: 100%;
   height: auto;
+}
+
+.form-sing__eye svg path {
+  -webkit-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
 }
 
 .form-sing__forgot {
@@ -4854,6 +4904,10 @@ body::after {
     color: #81bd52;
     border-color: currentColor;
     background: transparent;
+  }
+
+  .form-sing__eye:hover svg path {
+    fill: #fff;
   }
 
   .form-sing__forgot:hover {
