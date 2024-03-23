@@ -3527,6 +3527,7 @@ body::after {
   .sing__body {
     position: relative;
     z-index: 3;
+    border: 0.0625rem solid rgba(234, 234, 234, 0.2);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
