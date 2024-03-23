@@ -2920,6 +2920,10 @@ body::after {
   max-width: 28.75rem;
 }
 
+.left-sing__subtitle_es {
+  max-width: 32.5rem;
+}
+
 .left-sing__subtitle:not(:last-child) {
   margin-bottom: 0.875rem;
 }
@@ -3202,7 +3206,7 @@ body::after {
 .right-sing {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background: linear-gradient(110deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
