@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <title>Main page</title>
+  <title>Sing in</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.min.css?_v=20240325081311">
@@ -14,6 +14,7 @@
 <body>
   <script>localStorage.getItem('theme') === 'dark' && document.querySelector('body').classList.add('dark-theme')</script>
   <div class="wrapper">
+
     <header class="header" data-lp>
       <div class="header__container">
         <a class="header__logo header__logo_l" href="">
@@ -29,7 +30,7 @@
           <nav class="menu__body">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link menu__link_current" href="">Editoriales</a>
+                <a class="menu__link" href="">Editoriales</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="">Anunciantes</a>
@@ -114,337 +115,41 @@
       </div>
     </header>
     <main class="page">
-      <section class="hero">
-        <div class="hero__container">
-          <div class="hero__descr">Red de Publicidad Nativa</div>
-          <h1 class="hero__title hero__title_es">
-            Trabajamos únicamente con editoriales de noticias de América Latina. ¡Hagamos un buen dinero juntos!
-          </h1>
-          <a class="hero__btn btn" href="https://dashboard.adn.scroogefrog.com/register">Inscríbete</a>
-        </div>
-        <div class="hero__bg">
-          <video src="files/hero-bg.mp4" autoplay muted playsinline loop width="1440" height="609"></video>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="advantages__container">
-          <h2 class="advantages__title title">
-            <span>Ventajas de Trabajar</span> con Scrooge Frog
-            Ad Network para las Editoriales
-          </h2>
-          <ul class="advantages__columns">
-            <li class="advantages__column">
-              <ul class="advantages__list">
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/01.webp" type="image/webp">
-                      <img src="img/advantages/01.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Estadísticas transparentes donde usted controla las ganancias de cada anunciante, formato del anuncio y la
-                    ubicación
-                  </div>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/02.webp" type="image/webp">
-                      <img src="img/advantages/02.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Red de publicidad auto optimizada (no se requieren conectores RTB)
-                  </div>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/03.webp" type="image/webp">
-                      <img src="img/advantages/03.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Optimización basada en RPM (ingresos por milla)
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="advantages__column">
-              <ul class="advantages__list">
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/04.webp" type="image/webp">
-                      <img src="img/advantages/04.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Varios formatos de viñetas (noticias, publicidad nativa, banners IAB)
-                  </div>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/05.webp" type="image/webp">
-                      <img src="img/advantages/05.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Operando en muchas ubicaciones geográficas de América Latina
-                  </div>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/06.webp" type="image/webp">
-                      <img src="img/advantages/06.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Modelos de pago personalizados para editoriales grandes
-                  </div>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/07.webp" type="image/webp">
-                      <img src="img/advantages/07.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Amplia gama de transferencias de dinero admitidas (PayPal, Wire, etc.)
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="advantages__column">
-              <ul class="advantages__list">
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/08.webp" type="image/webp">
-                      <img src="img/advantages/08.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Trabajar con presupuestos ilimitados bajo el KPI (marketing de rendimiento) del anunciante
-                  </div>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/09.webp" type="image/webp">
-                      <img src="img/advantages/09.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Amplia biblioteca de ofertas para cada editorial
-                  </div>
-                </li>
-                <li class="advantages__item">
-                  <div class="advantages__icon">
-                    <picture>
-                      <source srcset="img/advantages/10.webp" type="image/webp">
-                      <img src="img/advantages/10.png" alt="">
-                    </picture>
-                  </div>
-                  <div class="advantages__descr">
-                    Usando algoritmos de aprendizaje automático
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <div class="advantages__bottom">
-            <a class="advantages__btn btn" href="https://dashboard.adn.scroogefrog.com/register">Inscríbete</a>
-          </div>
-        </div>
-      </section>
-      <section class="offers">
-        <div class="offers__container">
-          <h2 class="offers__title title">
-            <span>Principales Ofertas</span> de ScroogeFrog AdNetwork
-          </h2>
-          <ul class="offers__columns">
-            <li class="offers__column column-offers">
-              <div class="column-offers__image">
-                <picture>
-                  <source srcset="img/offers/01.webp" type="image/webp">
-                  <img src="img/offers/01.jpg" width="387" height="188" alt="">
-                </picture>
+      <div class="sing">
+        <div class="sing__container">
+          <div class="sing__body sing__body_thank">
+            <div class="left-sing left-sing_thank">
+              <h1 class="left-sing__title">Gracias por registrarte</h1>
+              <div class="left-sing__subtitle left-sing__subtitle_thanks">
+                <b>Darya</b>, tu registro se ha completado exitosamente.
+                Se ha enviado un correo electrónico de confirmación a <b>panisheva@gmail.com</b>
               </div>
-              <h3 class="column-offers__descr">Suplementos alimenticios</h3>
-            </li>
-            <li class="offers__column column-offers">
-              <div class="column-offers__image">
-                <picture>
-                  <source srcset="img/offers/02.webp" type="image/webp">
-                  <img src="img/offers/02.jpg" width="387" height="188" alt="">
-                </picture>
+              <div class="left-sing__subtitle left-sing__subtitle_thanks">
+                Por favor, revisa tu bandeja de entrada para activar tu cuenta. Si el correo electrónico no se encuentra
+                allí, por favor, revisa tu carpeta de correo no deseado
               </div>
-              <h3 class="column-offers__descr">Inversiones</h3>
-            </li>
-            <li class="offers__column column-offers">
-              <div class="column-offers__image">
-                <picture>
-                  <source srcset="img/offers/03.webp" type="image/webp">
-                  <img src="img/offers/03.jpg" width="387" height="188" alt="">
-                </picture>
+              <div class="left-sing__subtitle left-sing__subtitle_thanks">
+                Mientras tanto, siéntete libre de explorar nuestro sitio web o ponerte al día con las últimas
+                actualizaciones en nuestro blog
               </div>
-              <h3 class="column-offers__descr">Mundo del espectáculo</h3>
-            </li>
-            <li class="offers__column column-offers">
-              <div class="column-offers__image">
-                <picture>
-                  <source srcset="img/offers/04.webp" type="image/webp">
-                  <img src="img/offers/04.jpg" width="387" height="188" alt="">
-                </picture>
+              <div class="left-sing__btns">
+                <a class="left-sing__btn btn" href="">Nuestro sitio</a>
+                <a class="left-sing__btn left-sing__btn_blog btn" href="">Blog</a>
               </div>
-              <h3 class="column-offers__descr">Comercio electrónico</h3>
-            </li>
-            <li class="offers__column column-offers">
-              <div class="column-offers__image">
-                <picture>
-                  <source srcset="img/offers/05.webp" type="image/webp">
-                  <img src="img/offers/05.jpg" width="362" height="239" alt="">
-                </picture>
-              </div>
-              <h3 class="column-offers__descr">
-                Preferimos colaborar con <span>editoriales de noticias</span> porque tienen la audiencia más adecuada para
-                nuestras ofertas (edad, sexo, intereses, ingresos)
-              </h3>
-            </li>
-          </ul>
-          <div class="offers__bottom">
-            <a class="offers__btn btn" href="https://dashboard.adn.scroogefrog.com/register">Inscríbete</a>
-          </div>
-        </div>
-      </section>
-      <section class="geo">
-        <div class="geo__container">
-          <h2 class="geo__title title">
-            Actualmente Trabajamos con las Siguientes Ubicaciones Geográficas
-          </h2>
-          <div class="geo__row">
-            <div class="geo__image geo__image_l">
+            </div>
+            <div class="right-sing right-sing_thanks">
               <picture>
-                <source srcset="img/geo/map-es.webp" type="image/webp">
-                <img src="img/geo/map-es.png" width="571" height="647" alt="">
+                <source srcset="img/sing-up/thanks-bg.webp" type="image/webp">
+                <img class="right-sing__bg" src="img/sing-up/thanks-bg.jpg" alt="">
               </picture>
             </div>
-            <div class="geo__image geo__image_d">
-              <picture>
-                <source srcset="img/geo/map-d-es.webp" type="image/webp">
-                <img src="img/geo/map-d-es.png" width="571" height="647" alt="">
-              </picture>
-            </div>
-            <div class="geo__content content-geo">
-              <h2 class="content-geo__title title">Actualmente Trabajamos con las Siguientes Ubicaciones Geográficas</h2>
-              <div class="content-geo__label">América Latina:</div>
-              <p class="content-geo__descr">
-                Argentina, Bolivia, Chile, Colombia, Costa Rica, Ecuador, Guatemala, Honduras, México, Panamá, Perú, República
-                Dominicana y Uruguay
-              </p>
-              <a class="content-geo__btn btn" href="https://dashboard.adn.scroogefrog.com/register">Inscríbete</a>
-            </div>
           </div>
         </div>
-      </section>
-      <section class="payment">
-        <div class="payment__container">
-          <h2 class="payment__title title">Modelos de Pago adecuados</h2>
-          <h3 class="payment__subtitle">Hay varios modelos de pago para el tráfico que apoyamos:</h3>
-          <div class="payment__columns">
-            <div class="payment__column column-payment">
-              <div class="column-payment__descr">
-                <span class="column-payment__decor"></span>
-                <p class="column-payment__text">
-                  <span>vCPM</span> — una impresión publicitaria se considera visible si al menos el 50% de su superficie se
-                  muestra en pantalla durante al menos un segundo (el criterio mínimo según las normas de medición de la IAB)
-                </p>
-              </div>
-              <span class="column-payment__or">O</span>
-            </div>
-            <div class="payment__column column-payment">
-              <div class="column-payment__coin">
-                <picture>
-                  <source srcset="img/payment/coin.webp" type="image/webp">
-                  <img src="img/payment/coin.png" width="178" height="175" alt="">
-                </picture>
-                <span class="column-payment__arrow column-payment__arrow_1"></span>
-                <span class="column-payment__arrow column-payment__arrow_2"></span>
-                <span class="column-payment__arrow column-payment__arrow_3"></span>
-              </div>
-              <div class="column-payment__descr column-payment__descr_centered">
-                <span class="column-payment__decor"></span>
-                <p class="column-payment__text">
-                  <span>CPM</span> con un valor mínimo aceptable de <span>CTR</span>
-                </p>
-              </div>
-              <span class="column-payment__or">O</span>
-            </div>
-            <div class="payment__column column-payment">
-              <div class="column-payment__descr">
-                <span class="column-payment__decor"></span>
-                <p class="column-payment__text">
-                  Modelo <span>RevShare</span>. Distribuimos el presupuesto del anunciante entre un <span>editorial</span> y
-                  la red en una proporción de <span>70</span>/30, correspondientemente
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="contact__container">
-          <div class="contact__body">
-            <div class="contact__left left-contact">
-              <h2 class="left-contact__title title" data-popup="#popup-thank">Contáctenos</h2>
-              <div class="left-contact__descr">Siempre estamos abiertos a la conversación y encantados
-                de compartir nuestra experiencia. Vamos, únete a nosotros</div>
-              <form class="left-contact__form form-contact" action="#">
-                <div class="form-contact__lines">
-                  <div class="form-contact__line form-contact__line_name">
-                    <input class="form-contact__input input" autocomplete="no" type="text" name="contact_name" placeholder="Nombre:">
-                  </div>
-                  <div class="form-contact__line form-contact__line_mail">
-                    <input class="form-contact__input input" autocomplete="no" type="text" name="contact_mail" placeholder="Correo electrónico:">
-                  </div>
-                  <div class="form-contact__line form-contact__line_social">
-                    <input class="form-contact__input input" autocomplete="no" type="text" name="contact_social" placeholder="WhatsApp/Skype/Telegram">
-                  </div>
-                </div>
-                <div class="form-contact__checkbox checkbox">
-                  <input class="checkbox__input" id="contact_agree" checked type="checkbox" value="1" name="contact_agree">
-                  <label class="checkbox__label" for="contact_agree">Acepto la <a href="">Política de Privacidad</a>
-                  </label>
-                </div>
-                <button class="form-contact__btn btn">Enviar mensaje</button>
-              </form>
-            </div>
-            <div class="contact__right right-contact">
-              <div class="right-contact__qr right-contact__qr_l">
-                <picture>
-                  <source srcset="img/contact/qr.webp" type="image/webp">
-                  <img src="img/contact/qr.png" width="252" height="246" alt="ESCANEA PARA CONTACTAR CON NUESTRO GESTOR">
-                </picture>
-              </div>
-              <div class="right-contact__qr right-contact__qr_d">
-                <picture>
-                  <source srcset="img/contact/qr-d.webp" type="image/webp">
-                  <img src="img/contact/qr-d.png" width="252" height="246" alt="ESCANEA PARA CONTACTAR CON NUESTRO GESTOR">
-                </picture>
-              </div>
-              <div class="right-contact__descr">ESCANEA PARA CONTACTAR
-                <br>
-                CON NUESTRO GESTOR
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        <picture>
+          <source srcset="img/sing-up/bg.webp" type="image/webp">
+          <img class="sing__bg" src="img/sing-up/bg.jpg" width="1440" height="716" alt="">
+        </picture>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__top top-footer">
@@ -578,12 +283,9 @@
             <img src="img/popup/img.png" width="208" height="196" alt="">
           </picture>
         </div>
-        <div class="popup__title">¡Gracias por tu solicitud!</div>
-        <div class="popup__descr">Nuestro experto se pondrá
-          <br>
-          en contacto contigo
-        </div>
-        <button class="popup__back" data-close>atras</button>
+        <div class="popup__title">Thank you for your request!</div>
+        <div class="popup__descr">Our manager will contact you</div>
+        <button class="popup__back" data-close>back</button>
       </div>
     </div>
   </div>
