@@ -258,20 +258,32 @@ input[type=date] {
 }
 
 .input.error-email + .form-sing__icon svg path,
+.input.error-email + .form-contact__icon svg path,
 .input.error-phone + .form-sing__icon svg path,
+.input.error-phone + .form-contact__icon svg path,
 .input.error-pass + .form-sing__icon svg path,
+.input.error-pass + .form-contact__icon svg path,
 .input.error-pass-conf + .form-sing__icon svg path,
+.input.error-pass-conf + .form-contact__icon svg path,
 .input.error-url + .form-sing__icon svg path,
-.input.error-text + .form-sing__icon svg path {
+.input.error-url + .form-contact__icon svg path,
+.input.error-text + .form-sing__icon svg path,
+.input.error-text + .form-contact__icon svg path {
   fill: #bd5252;
 }
 
 .input.error-email + .form-sing__icon svg path.svg-name,
+.input.error-email + .form-contact__icon svg path.svg-name,
 .input.error-phone + .form-sing__icon svg path.svg-name,
+.input.error-phone + .form-contact__icon svg path.svg-name,
 .input.error-pass + .form-sing__icon svg path.svg-name,
+.input.error-pass + .form-contact__icon svg path.svg-name,
 .input.error-pass-conf + .form-sing__icon svg path.svg-name,
+.input.error-pass-conf + .form-contact__icon svg path.svg-name,
 .input.error-url + .form-sing__icon svg path.svg-name,
-.input.error-text + .form-sing__icon svg path.svg-name {
+.input.error-url + .form-contact__icon svg path.svg-name,
+.input.error-text + .form-sing__icon svg path.svg-name,
+.input.error-text + .form-contact__icon svg path.svg-name {
   fill: none;
   stroke: #bd5252;
 }
@@ -2148,6 +2160,10 @@ body::after {
   width: 100%;
 }
 
+.form-contact__lines {
+  text-align: left;
+}
+
 .form-contact__lines:not(:last-child) {
   margin-bottom: 1.125rem;
 }
@@ -2156,30 +2172,24 @@ body::after {
   position: relative;
 }
 
-.form-contact__line::after {
-  content: "";
+.form-contact__line:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.form-contact__line_mail .form-contact__icon {
+  background-image: url("../img/contact/icons/mail.svg");
+  height: 1.1875rem;
+}
+
+.form-contact__icon {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
   left: 2rem;
-  background: url("../img/contact/icons/name.svg") 50%/100% no-repeat;
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.form-contact__line:not(:last-child) {
-  margin-bottom: 0.9375rem;
-}
-
-.form-contact__line_mail::after {
-  background-image: url("../img/contact/icons/mail.svg");
-  height: 1.1875rem;
-}
-
-.form-contact__line_social::after {
-  background-image: url("../img/contact/icons/social.svg");
 }
 
 .form-contact__checkbox {
