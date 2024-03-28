@@ -355,6 +355,7 @@ input[type=date] {
 .pass-msg {
   font-size: 0.75rem;
   color: #bd5252;
+  text-align: left;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -419,6 +420,18 @@ input[type=date] {
 
 .checkbox__input:checked + .checkbox__label::after {
   opacity: 1;
+}
+
+.checkbox__input.error-check + .checkbox__label {
+  color: #bd5252;
+}
+
+.checkbox__input.error-check + .checkbox__label a {
+  color: #bd5252;
+}
+
+.checkbox__input.error-check + .checkbox__label::before {
+  background: #bd5252;
 }
 
 .checkbox__label {
