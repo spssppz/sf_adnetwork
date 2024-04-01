@@ -5047,6 +5047,10 @@ body::after {
   }
 
   .form-sing__eye:hover svg path {
+    fill: #cccfcf;
+  }
+
+  .dark-theme .form-sing__eye:hover svg path {
     fill: #fff;
   }
 
