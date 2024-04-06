@@ -596,6 +596,12 @@ input[type=date] {
   width: 100%;
   background-color: transparent;
   height: 100%;
+  font-size: 1rem;
+  color: #a0a3a3;
+}
+
+.select__input:focus {
+  outline: none;
 }
 
 .select__options {
@@ -608,6 +614,8 @@ input[type=date] {
   border: 0.0625rem solid rgba(160, 163, 163, 0.2);
   border-top: none;
   border-radius: 0.5625rem;
+  overflow: auto;
+  max-height: 9.375rem;
   padding: 0.625rem 0rem 0.3125rem;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
@@ -3613,6 +3621,10 @@ body::after {
 
   .right-help {
     padding-top: 1rem;
+  }
+
+  .sing {
+    min-height: 80vh;
   }
 
   .sing {
