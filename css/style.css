@@ -3629,10 +3629,7 @@ body::after {
   }
 
   .sing {
-    min-height: 90vh;
-  }
-
-  .sing {
+    min-height: 62vh;
     position: relative;
     padding: 2rem 0rem;
   }
