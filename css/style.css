@@ -619,6 +619,11 @@ input[type=date] {
   padding: 0.625rem 0rem 0.3125rem;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+  scrollbar-width: none;
+}
+
+.select__options::-webkit-scrollbar {
+  display: none;
 }
 
 .dark-theme .select__options {
