@@ -649,6 +649,18 @@ input[type=date] {
   background-color: #eee;
 }
 
+.select__option_hidden {
+  display: none;
+}
+
+.select__empty {
+  display: block;
+  text-align: left;
+  padding: 0.3125rem 0.9375rem;
+  font-size: 1rem;
+  color: #a0a3a3;
+}
+
 .select__row {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
