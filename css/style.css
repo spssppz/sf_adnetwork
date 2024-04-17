@@ -749,6 +749,12 @@ input[type=date] {
   will-change: visibility;
   border-top: none;
   border-radius: 0.5625rem;
+  scrollbar-width: 0;
+}
+
+.choices__list--dropdown:-webkit-scrollbar,
+.choices__list[aria-expanded]:-webkit-scrollbar {
+  display: none !important;
 }
 
 .is-active.choices__list--dropdown,
@@ -3393,6 +3399,9 @@ body::after {
   padding: 2.0625rem 0rem 1.6875rem;
   background-color: #fff;
   text-align: center;
+  border-radius: 2.0625rem 0 0 2.0625rem;
+  border: 0.0625rem solid rgba(234, 234, 234, 0.2);
+  border-right: none;
   -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
 }
@@ -3765,12 +3774,16 @@ body::after {
 }
 
 .right-sing {
+  border-radius: 0 2.0625rem 2.0625rem 0;
   -webkit-backdrop-filter: blur(18px);
           backdrop-filter: blur(18px);
   background: linear-gradient(110deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 0.0625rem solid rgba(234, 234, 234, 0.2);
+  border-left: none;
+  overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4112,13 +4125,10 @@ body::after {
   .sing__body {
     position: relative;
     z-index: 3;
-    border: 0.0625rem solid rgba(234, 234, 234, 0.2);
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    border-radius: 2.0625rem;
-    overflow: hidden;
   }
 
   .sing__body_thank {
