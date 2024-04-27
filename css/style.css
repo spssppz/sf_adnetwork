@@ -3436,6 +3436,10 @@ body::after {
           justify-content: center;
 }
 
+.left-sing_forgot-pass {
+  border: none;
+}
+
 .left-sing__title {
   font-weight: 500;
   font-size: 2rem;
@@ -3809,6 +3813,10 @@ body::after {
 
 .dark-theme .right-sing {
   background: linear-gradient(110deg, rgba(21, 21, 21, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.right-sing_thanks {
+  border: none;
 }
 
 .right-sing_thanks::before,
